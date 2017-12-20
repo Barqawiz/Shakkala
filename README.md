@@ -41,7 +41,6 @@ This beta version trained with personal computer on historical Arabic data and r
 ### Prediction Example
 - Real output :<br/>
 فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهَذَا أَوْلَى
-<br/>
 - Predicted output :<br/>
 فَإِنْ لَمْ يَكُونُا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهُذَا أَوْلَى
 
