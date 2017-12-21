@@ -45,8 +45,8 @@ This beta version trained with personal computer on historical Arabic data and r
 فَإِنْ لَمْ يَكُونُا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهُذَا أَوْلَى
 
 ### Accuracy Enhancements  
-The model can be enhanced to reach 95%-98% with following:<br/>
-- Availability of model formed data to train the network. (because current version trained with the available historical Arabic data only)
+The model can be enhanced to reach 95%-98% a  ccuracy with following:<br/>
+- Availability of modern formed data to train the network. (because current version trained with the available historical Arabic data only)
 - Rent a server with high GPU to increase the number of epochs, layer and neural units.
 
 ## Team
