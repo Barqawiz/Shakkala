@@ -85,6 +85,9 @@ def get_taskel(sentence):
     return output
 
 def combine_text_with_harakat(input_sent, output_sent):
+    #print("input : " , len(input_sent))
+    #print("output : " , len(output_sent))
+
     harakat_stack = Stack()
     temp_stack    = Stack()
     #process harakat
@@ -99,6 +102,12 @@ def combine_text_with_harakat(input_sent, output_sent):
             harakat_stack.push(combine)
         else:
             harakat_stack.push(haraka)
+
+    #fix combine differences
+    input_length  = len(input_sent)
+    output_length = harakat_stack.size()
+    for index in range(0,(input_length-output_length)):
+        harakat_stack.push("")
 
     #combine with text
     text = ""
@@ -115,7 +124,7 @@ class Stack:
         self.stack = []
 
     def isEmpty(self):
-        return self.size(self) == 0
+        return self.size() == 0
 
     def push(self, item):
         self.stack.append(item)
@@ -124,7 +133,7 @@ class Stack:
         return self.stack.pop()
 
     def peek(self):
-        if self.size(self) == 0:
+        if self.size() == 0:
             return None
         else:
             return self.stack[len(self.stack)-1]

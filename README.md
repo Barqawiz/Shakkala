@@ -1,7 +1,7 @@
-# Shakkala Project V 0.1 مشروع شكّالة
+# Shakkala Project V 1.0 مشروع شكّالة
 ## Introduction
 Shakkala project use recurrent neural network to automatically form Arabic characters (تشكيل الحروف).<br/>
-This is beta version 0.1
+This is beta version 1.0 with big improve from previous version 0.1
 
 ## Requirements
 Execute following commands:<br/>
@@ -9,6 +9,7 @@ Execute following commands:<br/>
 cd requirements
 pip install -r requirements.txt
 ```
+
 ## Code Examples (How to)
 Check full example in (demo.py) file.<br/>
 
@@ -33,21 +34,31 @@ final_output = sh.get_final_text(input_text, predicted_harakat)
 ```
 
 ## Accuracy
-This beta version trained with personal computer on historical Arabic data and reached accuracy of almost 90%.
-
-### Lose History
-<img src="images/loss_history.png" alt="Loss History" style="height: 100px;"/>
+In this version accuracy reached almost 90% and in some data it reach more.
+This beta version trained on personal computer with majority of historical Arabic data from books and some of available formed modern data in the internet.
 
 ### Prediction Example
+Following results predicted with model (middle_model.h5)
+## Example1
 - Real output :<br/>
 فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهَذَا أَوْلَى
 - Predicted output :<br/>
-فَإِنْ لَمْ يَكُونُا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهُذَا أَوْلَى
+فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالَ وَهَذَا أَوْلَى
+
+## Example2
+- Real output :<br/>
+قَالَ الْإِسْنَوِيُّ  وَسَوَاءٌ فِيمَا قَالُوهُ مَاتَ فِي حَيَاةِ أَبَوَيْهِ أَمْ لَا
+- Predicted output :<br/>
+قَالَ الْإِسْنَوِيُّ  وَسَوَاءٌ فِيمَا قَالُوهُ مَاتَ فِي حَيَاةِ أَبَوَيْهِ أَمْ لَا
+
 
 ### Accuracy Enhancements  
-The model can be enhanced to reach 95%-98% a  ccuracy with following:<br/>
+The model can be enhanced to reach 95%-98% accuracy with following:<br/>
 - Availability of modern formed data to train the network. (because current version trained with the available historical Arabic data only)
 - Rent a server with high GPU to increase the number of epochs, layer and neural units.
+
+### Model Design
+<img src="images/mode_design.png" alt="Model" style="height: 100px;"/>
 
 ## Team
 1. Ahmad Barqawi: Neural Network Developer.<br/>

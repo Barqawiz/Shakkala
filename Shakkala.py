@@ -35,15 +35,20 @@ import numpy as np
 class Shakkala:
 
     # intial
-    max_sentence = 495
+    #max_sentence = 495
 
-    def __init__(self, folder_location):
+    def __init__(self, folder_location, version=1):
 
         assert folder_location != None, "model_location cant be empty, send location of keras model"
 
         model_folder = os.path.join(folder_location, 'model')
-        self.model_location = os.path.join(model_folder, ('simple_model' + '.h5'))
-
+        if version == 1:
+            self.max_sentence = 495
+            self.model_location = os.path.join(model_folder, ('simple_model' + '.h5'))
+        elif version == 2:
+            self.max_sentence = 315
+            self.model_location = os.path.join(model_folder, ('middle_model' + '.h5'))
+            
         dictionary_folder = os.path.join(folder_location, 'dictionary')
         input_vocab_to_int  = helper.load_binary('input_vocab_to_int',dictionary_folder)
         output_int_to_vocab = helper.load_binary('output_int_to_vocab',dictionary_folder)
@@ -64,7 +69,7 @@ class Shakkala:
     def prepare_input(self, input_sent):
 
         assert input_sent != None and len(input_sent) < self.max_sentence, \
-        "max length for input_sent should be 500 characters, you can split the sentence into multiple sentecens and call the function"
+        "max length for input_sent should be {} characters, you can split the sentence into multiple sentecens and call the function".format(self.max_sentence)
 
         input_sent = [input_sent]
 
