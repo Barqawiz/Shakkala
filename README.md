@@ -54,7 +54,7 @@ Following results predicted with model (middle_model.h5)
 
 ### Accuracy Enhancements  
 The model can be enhanced to reach 95%-98% accuracy with following:<br/>
-- Availability of modern formed data to train the network. (because current version trained with the available historical Arabic data only)
+- Availability of modern formed data to train the network. (because current version trained with mostly available historical Arabic data and some modern data)
 - Rent a server with high GPU to increase the number of epochs, layer and neural units.
 
 ### Model Design
@@ -67,6 +67,7 @@ The model can be enhanced to reach 95%-98% accuracy with following:<br/>
 
 License
 -------
+Free to use and distribute only mention the original project name Shakkala as base model.
     The MIT License (MIT)
 
     Copyright (c) 2017 Shakkala Project
