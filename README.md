@@ -38,6 +38,7 @@ In this version accuracy reached almost 90% and in some data it reach more.
 This beta version trained on personal computer with majority of historical Arabic data from books and some of available formed modern data in the internet.
 
 ### Prediction Example
+For live demo based on Shakkala library click [link](http://ahmadai.com/shakkala/)
 Following results predicted with model (middle_model.h5)
 ## Example1
 - Real output :<br/>
