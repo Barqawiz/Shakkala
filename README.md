@@ -1,4 +1,7 @@
 # Shakkala Project V 1.0 مشروع شكّالة
+
+<img src="images/shakkala.png" alt="Model" style="height: 150px;"/>
+
 ## Introduction
 Shakkala project use recurrent neural network to automatically form Arabic characters (تشكيل الحروف).<br/>
 This is beta version 1.0 with big improve from previous version 0.1
@@ -64,7 +67,7 @@ The model can be enhanced to reach 95%-98% accuracy with following:<br/>
 ## Team
 1. Ahmad Barqawi: Neural Network Developer.<br/>
 2. Taha Zerrouki: Mentor Data and Results.<br/>
-
+3. Mohammad Issam Aklik: Artist.<br/>
 
 License
 -------
