@@ -1,6 +1,6 @@
 # Shakkala Project V 1.0 مشروع شكّالة
 
-<img src="images/shakkala.png" alt="Model" style="height: 90px;"/>
+<img src="images/shakkala.png" alt="Model" height="75" width="75" style="height: 75px;"/>
 
 ## Introduction
 Shakkala project use recurrent neural network to automatically form Arabic characters (تشكيل الحروف).<br/>
