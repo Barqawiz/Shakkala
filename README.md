@@ -37,8 +37,12 @@ final_output = sh.get_final_text(input_text, predicted_harakat)
 ```
 
 ## Accuracy
-In this version accuracy reached almost 90% and in some data it reach more.
+In this beta version 1 accuracy reached almost 90% and in some data it reach more.
 This beta version trained on personal computer with majority of historical Arabic data from books and some of available formed modern data in the internet.
+
+### Accuracy Enhancements
+Version 2 on the process after got infrastructure support from (propeller inc) and more training data aggregated. For more about version 2 ceck wiki
+
 
 ### Prediction Example
 For live demo based on Shakkala library click the [link](http://ahmadai.com/shakkala/) <br/>
@@ -64,10 +68,11 @@ The model can be enhanced to reach 95%-98% accuracy with following:<br/>
 ### Model Design
 <img src="images/mode_design.png" alt="Model" style="height: 100px;"/>
 
-## Team
+## Contribution
 1. Ahmad Barqawi: Neural Network Developer.<br/>
 2. Taha Zerrouki: Mentor Data and Results.<br/>
 3. Mohammad Issam Aklik: Artist.<br/>
+4. propellerinc.me: Provide infrastructure and consultation support.
 
 License
 -------
