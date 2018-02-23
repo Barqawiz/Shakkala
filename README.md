@@ -41,7 +41,8 @@ In this beta version 1 accuracy reached almost 90% and in some data it reach mor
 This beta version trained on personal computer with majority of historical Arabic data from books and some of available formed modern data in the internet.
 
 ### Accuracy Enhancements
-Version 2 on the process after got infrastructure support from (propeller inc) and more training data aggregated. For more about version 2 ceck wiki
+Version 2 on the process after got infrastructure support from (propeller inc) and more training data aggregated. 
+For more about version 2 and how to contribute check wiki
 
 
 ### Prediction Example
