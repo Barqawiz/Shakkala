@@ -3,7 +3,7 @@
 <img src="images/shakkala.png" alt="Model" height="130" width="130"/>
 
 ## Introduction
-Shakkala project use recurrent neural network to automatically form Arabic characters (تشكيل الحروف).<br/>
+Shakkala project use recurrent neural network for Arabic text vocalization to automatically form Arabic characters (تشكيل الحروف) which can be used to enhance text-to-speech systems.<br/>
 This is beta version 1.0 with big improve from previous version 0.1
 
 ## Requirements
