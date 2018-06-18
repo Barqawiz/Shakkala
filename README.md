@@ -73,7 +73,7 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 
 License
 -------
-Free to use and distribute only mention the original project name Shakkala as base model.
+Free to use and distribute only mention the original project name Shakkala as base model.<br/>
   The MIT License (MIT)
 
   Copyright (c) 2017 Shakkala Project
