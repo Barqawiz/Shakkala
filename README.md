@@ -4,7 +4,7 @@
 
 ## Introduction
 Shakkala project use recurrent neural network for Arabic text vocalization to automatically form Arabic characters (تشكيل الحروف) which can be used to enhance text-to-speech systems.<br/>
-This is beta version 2.0 with improve from previous version 0.1
+This model can be used in many applications such as enhance text-to-speech systems or search results.
 
 ## Requirements
 Execute following commands:<br/>
