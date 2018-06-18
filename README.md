@@ -44,7 +44,7 @@ This beta version trained on majority of historical Arabic data from books and s
 
 ### Prediction Example
 For live demo based on Shakkala library click the [link](http://ahmadai.com/shakkala/) <br/>
-Following results predicted with model (middle_model.h5)
+
 ## Examples
 | Real output | Predicted output |
 | ------------- | ---------------- |
@@ -74,6 +74,7 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 License
 -------
 Free to use and distribute only mention the original project name Shakkala as base model.<br/>
+
   The MIT License (MIT)
 
   Copyright (c) 2017 Shakkala Project
