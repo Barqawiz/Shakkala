@@ -1,10 +1,10 @@
-# Shakkala Project V 1.0 مشروع شكّالة
+# Shakkala Project V 2.0 مشروع شكّالة
 
-<img src="images/shakkala.png" alt="Model" height="130" width="130"/>
+<img src="images/shakkala.png" alt="Model" height="140" width="140"/>
 
 ## Introduction
 Shakkala project use recurrent neural network for Arabic text vocalization to automatically form Arabic characters (تشكيل الحروف) which can be used to enhance text-to-speech systems.<br/>
-This is beta version 1.0 with big improve from previous version 0.1
+This is beta version 2.0 with improve from previous version 0.1
 
 ## Requirements
 Execute following commands:<br/>
@@ -28,7 +28,7 @@ input_int = sh.prepare_input(input_text)
 ```
 model, graph = sh.get_model()
 with graph.as_default():
-      logits = model.predict(input_int)[0]
+  logits = model.predict(input_int)[0]
 ```
 4. Predict output
 ```
@@ -37,57 +37,53 @@ final_output = sh.get_final_text(input_text, predicted_harakat)
 ```
 
 ## Accuracy
-In this beta version 1 accuracy reached almost 90% and in some data it reach more.
-This beta version trained on personal computer with majority of historical Arabic data from books and some of available formed modern data in the internet.
+In this beta version 2 accuracy reached almost 95% and in some data it reach more.
+This beta version trained on majority of historical Arabic data from books and some of available formed modern data in the internet.<br/>
 
-### Accuracy Enhancements
-Version 2 on the process after got infrastructure support from (propeller inc) and more training data aggregated. 
-For more about version 2 and how to contribute check wiki
-
+<img src="images/loss_history_v2.png" alt="history" style="height: 100px;"/>
 
 ### Prediction Example
 For live demo based on Shakkala library click the [link](http://ahmadai.com/shakkala/) <br/>
 Following results predicted with model (middle_model.h5)
-## Example1
-- Real output :<br/>
-فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهَذَا أَوْلَى
-- Predicted output :<br/>
-فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالَ وَهَذَا أَوْلَى
-
-## Example2
-- Real output :<br/>
-قَالَ الْإِسْنَوِيُّ  وَسَوَاءٌ فِيمَا قَالُوهُ مَاتَ فِي حَيَاةِ أَبَوَيْهِ أَمْ لَا
-- Predicted output :<br/>
-قَالَ الْإِسْنَوِيُّ  وَسَوَاءٌ فِيمَا قَالُوهُ مَاتَ فِي حَيَاةِ أَبَوَيْهِ أَمْ لَا
-
+## Examples
+| Real output | Predicted output |
+| ------------- | ---------------- |
+| فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهَذَا أَوْلَى  | فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهَذَا أَوْلَى |
+| قَالَ الْإِسْنَوِيُّ  وَسَوَاءٌ فِيمَا قَالُوهُ مَاتَ فِي حَيَاةِ أَبَوَيْهِ أَمْ لَا  | قَالَ الْإِسْنَوِيُّ  وَسَوَاءٌ فِيمَا قَالُوهُ مَاتَ فِي حَيَاةِ أَبَوَيْهِ أَمْ لَا  |
+| طَابِعَةٌ ثُلَاثِيَّةُ الْأَبْعَاد | طَابِعَةٌ ثَلَاثِيَّةُ الْأَبْعَادِ  |
 
 ### Accuracy Enhancements  
-The model can be enhanced to reach 95%-98% accuracy with following:<br/>
-- Availability of modern formed data to train the network. (because current version trained with mostly available historical Arabic data and some modern data)
-- Rent a server with high GPU to increase the number of epochs, layer and neural units.
+The model can be enhanced to reach more than 95% accuracy with following:<br/>
+- Availability of more modern formed data to train the network. (because current version trained with mostly available historical Arabic data and some modern data)
+- Stack different models
 
 ### Model Design
-<img src="images/mode_design.png" alt="Model" style="height: 100px;"/>
+<img src="images/mode_design.png" alt="Model" style="height: 150px;"/>
 
 ## Contribution
+### Core Team
 1. Ahmad Barqawi: Neural Network Developer.<br/>
 2. Taha Zerrouki: Mentor Data and Results.<br/>
-3. Mohammad Issam Aklik: Artist.<br/>
-4. propellerinc.me: Provide infrastructure and consultation support.
+### Contributors
+1. Zaid Farekh & propellerinc.me: Provide infrastructure and consultation support.<br/>
+2. Mohammad Issam Aklik: Artist.<br/>
+3. Brahim Sidi: Form new sentences.<br/>
+4. Fadi Bakoura: Aggregate online content.<br/>
+
 
 License
 -------
 Free to use and distribute only mention the original project name Shakkala as base model.
-    The MIT License (MIT)
+  The MIT License (MIT)
 
-    Copyright (c) 2017 Shakkala Project
+  Copyright (c) 2017 Shakkala Project
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
 
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.

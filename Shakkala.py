@@ -48,7 +48,10 @@ class Shakkala:
         elif version == 2:
             self.max_sentence = 315
             self.model_location = os.path.join(model_folder, ('middle_model' + '.h5'))
-            
+        elif version == 3:
+            self.max_sentence = 315
+            self.model_location = os.path.join(model_folder, ('second_model6' + '.h5'))
+
         dictionary_folder = os.path.join(folder_location, 'dictionary')
         input_vocab_to_int  = helper.load_binary('input_vocab_to_int',dictionary_folder)
         output_int_to_vocab = helper.load_binary('output_int_to_vocab',dictionary_folder)
@@ -59,7 +62,9 @@ class Shakkala:
 
     # model
     def get_model(self):
+        print('start load model')
         model = load_model(self.model_location)
+        print('end load model')
         graph = tf.get_default_graph()
 
         return model, graph

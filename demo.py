@@ -12,7 +12,7 @@ if __name__ == "__main__":
     folder_location = './'
 
     # create Shakkala object
-    sh = Shakkala(folder_location, version=2)
+    sh = Shakkala(folder_location, version=3)
 
     # prepare input
     input_int = sh.prepare_input(input_text)
