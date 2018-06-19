@@ -45,7 +45,6 @@ This beta version trained on majority of historical Arabic data from books and s
 ### Prediction Example
 For live demo based on Shakkala library click the [link](http://ahmadai.com/shakkala/) <br/>
 
-## Examples
 | Real output | Predicted output |
 | ------------- | ---------------- |
 | فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهَذَا أَوْلَى  | فَإِنْ لَمْ يَكُونَا كَذَلِكَ أَتَى بِمَا يَقْتَضِيهِ الْحَالُ وَهَذَا أَوْلَى |
@@ -57,7 +56,7 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 - Availability of more modern formed data to train the network. (because current version trained with mostly available historical Arabic data and some modern data)
 - Stack different models
 
-### Model Design
+## Model Design
 <img src="images/mode_design.png" alt="Model" style="height: 150px;"/>
 
 ## Contribution
@@ -69,7 +68,7 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 2. Mohammad Issam Aklik: Artist.<br/>
 3. Brahim Sidi: Form new sentences.<br/>
 4. Fadi Bakoura: Aggregate online content.<br/>
-
+5. Ola Ghanem: Testing.<br/>
 
 License
 -------
