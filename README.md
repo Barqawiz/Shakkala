@@ -18,7 +18,7 @@ Check full example in (demo.py) file.<br/>
 
 1. Create Shakkala object
 ```
-sh = Shakkala(folder_location)
+sh = Shakkala(folder_location, version={version_num})
 ```
 2. Prepare input
 ```
@@ -35,6 +35,13 @@ with graph.as_default():
 predicted_harakat = sh.logits_to_text(logits)
 final_output = sh.get_final_text(input_text, predicted_harakat)
 ```
+Available models <br>
+
+- version_num=1: this first test of the solution.
+- version_num=2: main release version.
+- version_num=3: some enhancements from version number 2.
+
+If worth to try both 2 and 3
 
 ## Accuracy
 In this beta version 2 accuracy reached almost 95% and in some data it reach more.
