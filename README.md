@@ -44,7 +44,7 @@ Available models: <br>
 It worth to try both version_num=2 and version_num=3.
 
 ## Accuracy
-In this beta version 2 accuracy reached almost 95% and in some data it reach more.
+In this beta version 2 accuracy reached up to 95% and in some data it reach more.
 This beta version trained on majority of historical Arabic data from books and some of available formed modern data in the internet.<br/>
 
 <img src="images/loss_history_v2.png" alt="history" style="height: 100px;"/>
