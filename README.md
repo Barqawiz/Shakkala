@@ -66,18 +66,6 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 ## Model Design
 <img src="images/mode_design.png" alt="Model" style="height: 150px;"/>
 
-## Contribution
-### Core Team
-1. Ahmad Barqawi: Neural Network Developer.<br/>
-2. Taha Zerrouki: Mentor Data and Results.<br/>
-### Contributors
-1. Zaid Farekh & propellerinc.me: Provide infrastructure and consultation support.<br/>
-2. Mohammad Issam Aklik: Artist.<br/>
-3. Brahim Sidi: Form new sentences.<br/>
-4. Fadi Bakoura: Aggregate online content.<br/>
-5. Ola Ghanem: Testing.<br/>
-
-
 ## Citation
 For academic work use
 ```
@@ -92,6 +80,17 @@ OR bibtex format
   year={2017}
 }
 ```
+
+## Contribution
+### Core Team
+1. Ahmad Barqawi: Neural Network Developer.<br/>
+2. Taha Zerrouki: Mentor Data and Results.<br/>
+### Contributors
+1. Zaid Farekh & propellerinc.me: Provide infrastructure and consultation support.<br/>
+2. Mohammad Issam Aklik: Artist.<br/>
+3. Brahim Sidi: Form new sentences.<br/>
+4. Fadi Bakoura: Aggregate online content.<br/>
+5. Ola Ghanem: Testing.<br/>
 
 License
 -------
