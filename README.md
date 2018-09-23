@@ -77,6 +77,22 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 4. Fadi Bakoura: Aggregate online content.<br/>
 5. Ola Ghanem: Testing.<br/>
 
+
+## Citation
+For academic work use
+```
+Shakkala, Arabic text vocalization, Barqawi & Zerrouki
+```
+OR bibtex format
+```
+@misc{
+  title={Shakkala, Arabic text vocalization},
+  author={Barqawi, Zerrouki},
+  url={https://github.com/Barqawiz/Shakkala},
+  year={2017}
+}
+```
+
 License
 -------
 Free to use and distribute only mention the original project name Shakkala as base model.<br/>
