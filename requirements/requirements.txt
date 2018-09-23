@@ -2,7 +2,6 @@ bleach==1.5.0
 certifi==2017.11.5
 click==6.7
 enum34==1.1.6
-Flask==0.12.2
 h5py==2.7.1
 html5lib==0.9999999
 itsdangerous==0.24
