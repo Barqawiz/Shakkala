@@ -37,7 +37,7 @@ class Shakkala:
     # intial
     #max_sentence = 495
 
-    def __init__(self, folder_location, version=2):
+    def __init__(self, folder_location, version=3):
 
         assert folder_location != None, "model_location cant be empty, send location of keras model"
 
