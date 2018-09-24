@@ -44,8 +44,8 @@ Available models: <br>
 It worth to try both version_num=2 and version_num=3.
 
 ## Accuracy
-In this beta version 2 accuracy reached up to 95% and in some data it reach more.
-This beta version trained on majority of historical Arabic data from books and some of available formed modern data in the internet.<br/>
+In this beta version 2 accuracy reached up to 95% and in some data it reach more based on complexity and data disribution.
+This beta version trained on more than million sentences with majority of historical Arabic data from books and **some of** available formed modern data in the internet.<br/>
 
 <img src="images/loss_history_v2.png" alt="history" style="height: 100px;"/>
 
@@ -60,7 +60,7 @@ For live demo based on Shakkala library click the [link](http://ahmadai.com/shak
 
 ### Accuracy Enhancements  
 The model can be enhanced to reach more than 95% accuracy with following:<br/>
-- Availability of more modern formed data to train the network. (because current version trained with mostly available historical Arabic data and some modern data)
+- Availability of more formed **modern**  data to train the network. (because current version trained with mostly available historical Arabic data and some modern data)
 - Stack different models
 
 ## Model Design
