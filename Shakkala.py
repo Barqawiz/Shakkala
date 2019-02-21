@@ -93,8 +93,12 @@ class Shakkala:
     # output processing
 
     def logits_to_text(self, logits):
-        text = "".join(self.dictionary['output_int_to_vocab'][prediction] for prediction in np.argmax(logits,1))
-        return text.replace('<PAD>','')
+        text = []
+        for prediction in np.argmax(logits, 1):
+            if self.dictionary['output_int_to_vocab'][prediction] == '<PAD>':
+                continue
+            text.append(self.dictionary['output_int_to_vocab'][prediction])
+        return text
 
     def get_final_text(self,input_sent, output_sent):
         return helper.combine_text_with_harakat(input_sent, output_sent)

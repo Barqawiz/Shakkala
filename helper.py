@@ -87,7 +87,8 @@ def get_taskel(sentence):
 def combine_text_with_harakat(input_sent, output_sent):
     #print("input : " , len(input_sent))
     #print("output : " , len(output_sent))
-
+    
+    """
     harakat_stack = Stack()
     temp_stack    = Stack()
     #process harakat
@@ -102,16 +103,19 @@ def combine_text_with_harakat(input_sent, output_sent):
             harakat_stack.push(combine)
         else:
             harakat_stack.push(haraka)
+    """
 
     #fix combine differences
     input_length  = len(input_sent)
-    output_length = harakat_stack.size()
+    output_length = len(output_sent) # harakat_stack.size()
     for index in range(0,(input_length-output_length)):
-        harakat_stack.push("")
+        output_sent.append("")
 
     #combine with text
     text = ""
-    for character, haraka in zip(input_sent, harakat_stack.to_array()):
+    for character, haraka in zip(input_sent, output_sent):
+        if haraka == '<UNK>' or haraka == 'ـ':
+            haraka = ''
         text += character + "" + haraka
 
     return text
