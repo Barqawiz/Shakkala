@@ -91,6 +91,7 @@ OR bibtex format
 3. Brahim Sidi: Form new sentences.<br/>
 4. Fadi Bakoura: Aggregate online content.<br/>
 5. Ola Ghanem: Testing.<br/>
+6. Ali Hamdi Ali Fadel: Contribute code.<br/>
 
 License
 -------
