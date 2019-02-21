@@ -104,9 +104,9 @@ def combine_text_with_harakat(input_sent, output_sent):
 
   # fix combine differences
   input_length  = len(input_sent)
-  output_length = len(output_sent)#harakat_stack.size()
+  output_length = len(output_sent) #harakat_stack.size()
   for index in range(0,(input_length-output_length)):
-    output_length.append("")
+    output_sent.append("")
 
   # combine with text
   text = ""
