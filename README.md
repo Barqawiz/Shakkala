@@ -43,6 +43,22 @@ Available models: <br>
 
 It worth to try both version_num=2 and version_num=3.
 
+## Perfomance Tips
+Shakkala built in object oriented way to load the model once into memory for faster prediction, to make sure you dont load it multiple times in your service or application follow the steps:
+- Load the model in global variable:
+```
+sh = Shakkala(folder_location, version={version_num})
+model, graph = sh.get_model()
+```
+- Then inside your request function or loop add:
+```
+input_int = sh.prepare_input(input_text)
+with graph.as_default():
+  logits = model.predict(input_int)[0]
+predicted_harakat = sh.logits_to_text(logits)
+final_output = sh.get_final_text(input_text, predicted_harakat)
+```
+
 ## Accuracy
 In this beta version 2 accuracy reached up to 95% and in some data it reach more based on complexity and data disribution.
 This beta version trained on more than million sentences with majority of historical Arabic data from books and **some of** available formed modern data in the internet.<br/>
