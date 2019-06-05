@@ -83,8 +83,8 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 <img src="images/mode_design.png" alt="Model" style="height: 150px;"/>
 
 ## References
-- A paper compare different arabic text diacritization models and show that shakkala is one of the best: 
-[Arabic Text Diacritization Using Deep Neural Networks](https://arxiv.org/abs/1905.01965)
+- A paper compare different arabic text diacritization models and show that shakkala is the best among available neural networks for this solution:
+[Arabic Text Diacritization Using Deep Neural Networks, 2019](https://arxiv.org/abs/1905.01965)
 
 ## Citation
 For academic work use
