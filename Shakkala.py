@@ -23,13 +23,11 @@ Created on Sat Dec 16 22:46:28 2017
 """
 import helper
 import os
-import tensorflow as tf
-from keras.models import Model
-from keras.models import load_model
-from keras.optimizers import Adam
-from keras.losses import sparse_categorical_crossentropy
-from keras.preprocessing.sequence import pad_sequences
 import numpy as np
+import tensorflow as tf
+
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 class Shakkala:
@@ -65,9 +63,8 @@ class Shakkala:
         print('start load model')
         model = load_model(self.model_location)
         print('end load model')
-        graph = tf.get_default_graph()
 
-        return model, graph
+        return model
 
     # input processing
 
