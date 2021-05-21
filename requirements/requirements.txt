@@ -15,6 +15,6 @@ protobuf==3.5.0.post1
 PyYAML>=4.2b1
 scipy==1.0.0
 six==1.11.0
-tensorflow==1.4.1
+tensorflow==2.5.0
 tensorflow-tensorboard==0.4.0rc3
 Werkzeug==0.15.3
