@@ -43,6 +43,12 @@ Available models: <br>
 
 It worth to try both version_num=2 and version_num=3.
 
+### Demo run
+The fastest way to start with Shakkala by running the demo:
+```
+python demo.py
+```
+
 ## Perfomance Tips
 Shakkala built in object oriented way to load the model once into memory for faster prediction, to make sure you dont load it multiple times in your service or application follow the steps:
 - Load the model in global variable:
