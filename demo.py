@@ -23,8 +23,8 @@ if __name__ == "__main__":
 
     model, graph = sh.get_model()
 
-    with graph.as_default():
-        logits = model.predict(input_int)[0]
+    # with graph.as_default():
+    logits = model.predict(input_int)[0]
 
     print("prepare and print output")
     predicted_harakat = sh.logits_to_text(logits)
