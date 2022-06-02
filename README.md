@@ -69,7 +69,7 @@ final_output = sh.get_final_text(input_text, predicted_harakat)
 In this beta version 2 accuracy reached up to 95% and in some data it reach more based on complexity and data disribution.
 This beta version trained on more than million sentences with majority of historical Arabic data from books and **some of** available formed modern data in the internet.<br/>
 
-<img src="images/loss_history_v2.png" alt="history" style="height: 100px;"/>
+<img src="images/loss_history_v2.png" alt="history" style="height: 300px;"/>
 
 ### Prediction Example
 For live demo based on Shakkala library click the [link](http://ahmadai.com/shakkala/) <br/>
@@ -86,7 +86,7 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 - Stack different models
 
 ## Model Design
-<img src="images/mode_design.png" alt="Model" style="height: 150px;"/>
+<img src="images/mode_design.png" alt="Model"/>
 
 ## References
 - A paper compare different arabic text diacritization models and show that shakkala is the best among available neural networks for this solution:
