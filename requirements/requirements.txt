@@ -1,5 +1,5 @@
 bleach
-certifi==2017.11.5
+certifi==2022.12.7
 click==6.7
 enum34==1.1.6
 html5lib==0.9999999
