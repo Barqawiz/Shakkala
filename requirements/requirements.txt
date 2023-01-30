@@ -6,7 +6,7 @@ html5lib==0.999999999
 itsdangerous==0.24
 Jinja2>=2.10.1
 Markdown==2.6.10
-nltk==3.4.5
+nltk==3.6.6
 numpy==1.22.0
 PyYAML>=4.2b1
 six
