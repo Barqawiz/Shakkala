@@ -12,6 +12,11 @@ cd requirements
 pip install -r requirements.txt
 ```
 
+Tested Tensorflow version:<br>
+```
+pip install tensorflow==2.9.0
+```
+
 ## Code Examples (How to)
 Check full example in (demo.py) file.<br/>
 

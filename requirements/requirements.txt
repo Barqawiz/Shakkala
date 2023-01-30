@@ -10,5 +10,5 @@ nltk==3.4.5
 numpy==1.22.0
 PyYAML>=4.2b1
 six
-tensorflow==2.5.0
+tensorflow==2.9.0
 Werkzeug==0.15.3
