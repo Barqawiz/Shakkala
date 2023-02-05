@@ -1,10 +1,17 @@
+.DS_Store
 LICENSE.md
 MANIFEST.in
 README.md
 Shakkala.py
 __init__.py
+demo.py
 helper.py
 setup.py
+Shakkala.egg-info/PKG-INFO
+Shakkala.egg-info/SOURCES.txt
+Shakkala.egg-info/dependency_links.txt
+Shakkala.egg-info/requires.txt
+Shakkala.egg-info/top_level.txt
 dictionary/input_vocab_to_int.pickle
 dictionary/output_int_to_vocab.pickle
 model/middle_model.h5

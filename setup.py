@@ -1,10 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='shakkala',
-    version='0.6',
+    name='Shakkala',
+    version='0.8',
     packages=find_packages(),
     include_package_data=True,
+    py_modules=['Shakkala', 'helper'],
+    package_data={'': ['dictionary/*', 'model/*']},
     description="Deep learning for Arabic text Vocalization - التشكيل الالي للنصوص العربية",
     long_description="The Shakkala project presents a recurrent neural network for Arabic text vocalization that automatically forms Arabic characters (تشكيل الحروف) to enhance text-to-speech systems.",
     install_requires=[

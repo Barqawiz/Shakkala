@@ -3,5 +3,4 @@ include helper.py
 include __init__.py
 include dictionary/*
 include model/*
-recursive-include root *
-recursive-include requirements *
+include requirements/ *
