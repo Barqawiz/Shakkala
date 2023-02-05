@@ -7,8 +7,9 @@ The Shakkala project presents a recurrent neural network for Arabic text vocaliz
 
 ## Requirements
 ### Easy setup
+No GitHub repository installation is needed for this case:
 ```
-pip install shakkala==0.1
+pip install shakkala==0.2
 ```
 
 ### Project setup
@@ -18,13 +19,14 @@ cd requirements
 pip install -r requirements.txt
 ```
 
-Shakkala tested with Tensorflow 2.9.3<br>
+Note: Shakkala has been tested with Tensorflow 2.9.3.<br>
 
 ## Code Examples (How to)
 Check full example in (demo.py) file.<br/>
 
 1. Create Shakkala object
 ```
+folder_location = './'
 sh = Shakkala(folder_location, version={version_num})
 ```
 2. Prepare input
