@@ -9,14 +9,15 @@ The Shakkala project presents a recurrent neural network for Arabic text vocaliz
 ### Easy setup
 No GitHub repository installation is needed for this case:
 ```
-pip install shakkala==0.2
+pip install shakkala
 ```
 
 ### Project setup
-Execute following commands to execute the source code:<br/>
+Execute the source code from Github:<br/>
 ```
 cd requirements
 pip install -r requirements.txt
+cd ..
 ```
 
 Note: Shakkala has been tested with Tensorflow 2.9.3.<br>
@@ -24,20 +25,28 @@ Note: Shakkala has been tested with Tensorflow 2.9.3.<br>
 ## Code Examples (How to)
 Check full example in (demo.py) file.<br/>
 
+0. Import
+```
+from shakkala import Shakkala
+```
+
 1. Create Shakkala object
 ```
-folder_location = './'
-sh = Shakkala(folder_location, version={version_num})
+sh = Shakkala()
+```
+OR for advanced usage:
+```
+sh = Shakkala(version={version_num})
 ```
 2. Prepare input
 ```
+input_text = "فإن لم يكونا كذلك أتى بما يقتضيه الحال وهذا أولى"
 input_int = sh.prepare_input(input_text)
 ```
 3. Call the neural network
 ```
 model, graph = sh.get_model()
-with graph.as_default():
-  logits = model.predict(input_int)[0]
+logits = model.predict(input_int)[0]
 ```
 4. Predict output
 ```
@@ -53,7 +62,7 @@ Available models: <br>
 It worth to try both version_num=2 and version_num=3.
 
 ### Demo run
-The fastest way to start with Shakkala by running the demo:
+The fastest way to start with Shakkala by running the demo from Github:
 ```
 python demo.py
 ```
@@ -68,8 +77,7 @@ model, graph = sh.get_model()
 - Then inside your request function or loop add:
 ```
 input_int = sh.prepare_input(input_text)
-with graph.as_default():
-  logits = model.predict(input_int)[0]
+logits = model.predict(input_int)[0]
 predicted_harakat = sh.logits_to_text(logits)
 final_output = sh.get_final_text(input_text, predicted_harakat)
 ```
@@ -78,7 +86,7 @@ final_output = sh.get_final_text(input_text, predicted_harakat)
 In this beta version 2 accuracy reached up to 95% and in some data it reach more based on complexity and data disribution.
 This beta version trained on more than million sentences with majority of historical Arabic data from books and **some of** available formed modern data in the internet.<br/>
 
-<img src="images/loss_history_v2.png" alt="history" style="height: 300px;"/>
+<img src="https://github.com/Barqawiz/Shakkala/blob/master/images/loss_history_v2.png" alt="history" style="height: 350px;"/>
 
 ### Prediction Example
 For live demo based on Shakkala library click the [link](http://ahmadai.com/shakkala/) <br/>
@@ -95,7 +103,7 @@ The model can be enhanced to reach more than 95% accuracy with following:<br/>
 - Stack different models
 
 ## Model Design
-<img src="images/mode_design.png" alt="Model"/>
+<img src="https://github.com/Barqawiz/Shakkala/blob/master/images/mode_design.png" alt="Model"/>
 
 ## References
 - A paper compare different arabic text diacritization models and show that shakkala is the best among available neural networks for this solution:

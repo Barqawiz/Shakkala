@@ -1,19 +1,21 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
-    name='Shakkala',
-    version='0.8',
+    name='shakkala',
+    version='1.6',
     packages=find_packages(),
     include_package_data=True,
-    py_modules=['Shakkala', 'helper'],
-    package_data={'': ['dictionary/*', 'model/*']},
+    url='https://ahmadai.com/shakkala/',
+    data_files=[('dictionary', ['shakkala/dictionary/input_vocab_to_int.pickle',
+                                'shakkala/dictionary/output_int_to_vocab.pickle']),
+                ('model', ['shakkala/model/middle_model.h5',
+                           'shakkala/model/second_model6.h5',
+                           'shakkala/model/simple_model.h5'])],
     description="Deep learning for Arabic text Vocalization - التشكيل الالي للنصوص العربية",
-    long_description="The Shakkala project presents a recurrent neural network for Arabic text vocalization that automatically forms Arabic characters (تشكيل الحروف) to enhance text-to-speech systems.",
-    install_requires=[
-        'tensorflow==2.9.3',
-        'h5py==3.8.0',
-        'nltk==3.6.6',
-        'numpy==1.24.1',
-        'click==8.1.3'
-    ],
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    install_requires=[        'tensorflow==2.9.3',        'h5py==3.8.0',        'nltk==3.6.6',        'numpy==1.24.1',        'click==8.1.3'    ],
 )
