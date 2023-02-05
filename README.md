@@ -1,4 +1,4 @@
-# Shakkala Project V 2.0 مشروع شكّالة
+# Shakkala Project V 2.1 مشروع شكّالة
 
 <img src="images/shakkala.png" alt="Model" height="140" width="140"/>
 
@@ -12,10 +12,7 @@ cd requirements
 pip install -r requirements.txt
 ```
 
-Tested Tensorflow version:<br>
-```
-pip install tensorflow==2.9.0
-```
+Shakkala tested with Tensorflow 2.9.3<br>
 
 ## Code Examples (How to)
 Check full example in (demo.py) file.<br/>
