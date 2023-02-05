@@ -1,11 +1,12 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
+with open("PIP_README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
     name='shakkala',
-    version='1.6',
+    version='1.7',
+    author='Ahmad Albarqawi',
     packages=find_packages(),
     include_package_data=True,
     url='https://ahmadai.com/shakkala/',
