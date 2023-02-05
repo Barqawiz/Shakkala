@@ -6,7 +6,13 @@
 The Shakkala project presents a recurrent neural network for Arabic text vocalization that automatically forms Arabic characters (تشكيل الحروف) to enhance text-to-speech systems. The model can also be used in other applications such as improving search results. In the beta version, the model was trained on over a million sentences, including a majority of historical Arabic data from books and some modern data from the internet. The accuracy of the model reached up to 95%, and in some data sets it achieved even higher levels of accuracy depending on complexity and data distribution. This innovative approach has the potential to significantly improve the quality of writing and text-to-speech systems for the Arabic language.
 
 ## Requirements
-Execute following commands:<br/>
+### Easy setup
+```
+pip install shakkala==0.1
+```
+
+### Project setup
+Execute following commands to execute the source code:<br/>
 ```
 cd requirements
 pip install -r requirements.txt

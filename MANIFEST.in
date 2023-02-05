@@ -1,0 +1,4 @@
+include dictionary/*
+include model/*
+recursive-include root *
+recursive-include requirements *
