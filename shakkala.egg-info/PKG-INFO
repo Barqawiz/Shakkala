@@ -1,4 +1,7 @@
 Metadata-Version: 2.1
 Name: shakkala
-Version: 0.2
+Version: 0.6
+Summary: Deep learning for Arabic text Vocalization - التشكيل الالي للنصوص العربية
 License-File: LICENSE.md
+
+The Shakkala project presents a recurrent neural network for Arabic text vocalization that automatically forms Arabic characters (تشكيل الحروف) to enhance text-to-speech systems.

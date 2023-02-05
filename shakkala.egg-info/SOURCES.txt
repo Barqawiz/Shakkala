@@ -1,6 +1,9 @@
 LICENSE.md
 MANIFEST.in
 README.md
+Shakkala.py
+__init__.py
+helper.py
 setup.py
 dictionary/input_vocab_to_int.pickle
 dictionary/output_int_to_vocab.pickle
