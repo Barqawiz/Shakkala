@@ -73,7 +73,7 @@ def get_taskel(sentence):
     for ch in reversed(sentence):
 
         if ord(ch) in harakat:
-            if (current_haraka is "") or\
+            if (current_haraka == "") or\
             (ord(ch) == connector and chr(connector) not in current_haraka) or\
             (chr(connector) == current_haraka):
                 current_haraka += ch
@@ -87,7 +87,7 @@ def get_taskel(sentence):
 def combine_text_with_harakat(input_sent, output_sent):
     #print("input : " , len(input_sent))
     #print("output : " , len(output_sent))
-    
+
     """
     harakat_stack = Stack()
     temp_stack    = Stack()
