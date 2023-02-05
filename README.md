@@ -8,7 +8,7 @@ The Shakkala project presents a recurrent neural network for Arabic text vocaliz
 ## Requirements
 
 ### Easy setup
-No GitHub repository installation is needed for this case:
+No GitHub repository installation is needed for [pip](https://pypi.org/project/shakkala/) case:
 ```
 pip install shakkala
 ```
