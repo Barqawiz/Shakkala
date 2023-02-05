@@ -1,1 +1,0 @@
-from .Shakkala import Shakkala
