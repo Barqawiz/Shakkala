@@ -1,4 +1,5 @@
-# Shakkala Project V 2.1 مشروع شكّالة
+# Shakkala Project مشروع شكّالة
+[![PyPI version](https://badge.fury.io/py/shakkala.svg)](https://badge.fury.io/py/shakkala)
 
 <img src="images/shakkala.png" alt="Model" height="140" width="140"/>
 
