@@ -12,5 +12,5 @@ six==1.16.0
 tensorflow==2.9.3
 urllib3==1.26.14
 webencodings==0.5.1
-Werkzeug==2.2.2
+Werkzeug==2.2.3
 wrapt==1.14.1
