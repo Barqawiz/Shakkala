@@ -9,7 +9,7 @@ opt-einsum==3.3.0
 packaging==23.0
 regex==2022.10.31
 six==1.16.0
-tensorflow==2.9.3
+tensorflow==2.11.1
 urllib3==1.26.14
 webencodings==0.5.1
 Werkzeug==2.2.2
